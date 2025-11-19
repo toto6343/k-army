@@ -1,10 +1,101 @@
-# K-Army
+아래는 사용자가 제공한 내용을 **README.md 형식에 맞게 재구성한 버전**입니다.
+현업에서 바로 사용 가능한 구조·문체·형식으로 정리했습니다.
 
-<h1>Deployment Environment</h1>
-<img src="https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white">
-<img src="https://img.shields.io/badge/cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white">
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-<img src="https://img.shields.io/badge/vmware-607078?style=for-the-badge&logo=vmware&logoColor=white">
-<img src="https://img.shields.io/badge/thunderbird-0A84FF?style=for-the-badge&logo=thunderbird&logoColor=white">
+---
 
-Windows 7, Windows Server 2012, GNS3, hMailServer
+# 🌐 KG 일보 신사옥 네트워크 신설 사업 제안 (K-ARMY)
+
+> **국내 종합 언론사 KG 일보의 신규 사옥에 고성능·고보안·고가용성 네트워크 인프라 구축을 제안합니다.**
+> 안정성, 보안성, 확장성을 핵심 가치로 네트워크를 설계·구축합니다.
+
+---
+
+## 📌 1. 프로젝트 개요 (Overview)
+
+| 구분        | 내용                                                |
+| --------- | ------------------------------------------------- |
+| **프로젝트명** | KG 일보 신사옥 네트워크 신설 사업                              |
+| **제안 업체** | K-ARMY                                            |
+| **클라이언트** | KG 일보                                             |
+| **핵심 목표** | 부서별 네트워크 분리, 내부/외부 서비스 제공, 보안 강화 및 중앙 집중 관리 체계 구축 |
+
+### 📋 요구사항 요약
+
+* 부서별 **VLAN 분리 및 트래픽 격리**
+* **내부 메일 서비스**, **공식 웹 서비스** 제공
+* 사원별 정보 저장을 위한 **DB 서버 구축**
+* 사외 근무자를 위한 **VPN 기반 원격 접속**
+* 전체 네트워크 **중앙 집중 관리 체계** 확보
+
+---
+
+## 📌 2. 구축 전략 (Strategy)
+
+K-ARMY는 다음 세 가지 핵심 전략을 기반으로 네트워크 환경을 구축합니다.
+
+| 전략                    | 세부 내용                                 |
+| --------------------- | ------------------------------------- |
+| **안정성 (Stability)**   | 장비 이중화(HA) 구성으로 서비스 중단 최소화            |
+| **보안성 (Security)**    | 방화벽·IDS/IPS·CA 인증 기반 통신으로 고도화된 보안성 확보 |
+| **유연성 (Flexibility)** | 사용자 증가 및 향후 서비스 확장에 대비한 모듈형 구조        |
+
+---
+
+## 📌 3. 네트워크 구성도 (Architecture)
+
+3-Tier(Core–Distribution–Access) 구조를 기반으로 설계된 네트워크 구성도입니다.
+
+<div align="center">
+  <img src="K_ARMY 네트워크 구성도.gif" alt="K-ARMY 네트워크 구성도" style="max-width:100%; height:auto;" />
+  <p>▲ KG 일보 신사옥 네트워크 구성 상세 다이어그램</p>
+</div>
+
+### 🔑 주요 설계 특징
+
+* **계층형 구조**로 트래픽 부하 분산 및 관리 효율화
+* **DMZ 분리**로 WEB/MAIL 서버 보안 강화
+* **VPN 기반 원격 접속** 지원
+* **부서별 VLAN 및 라우팅 설계**로 보안성과 관리 용이성 확보
+
+---
+
+## 📌 4. 핵심 서버 및 기술 구성 (Key Components)
+
+### 💻 서버 구성
+
+| 서버                  | 주요 역할                |
+| ------------------- | -------------------- |
+| **Database Server** | 사원·회원 정보 및 수집 데이터 저장 |
+| **Mail Server**     | 내부 메일 서비스 제공         |
+| **Log Server**      | 장비/OS 로그 저장 및 분석     |
+| **Backup Server**   | 설정 및 데이터 백업/복구       |
+| **CA Server**       | 인증서 기반 보안 통신 제공      |
+
+### 🛡️ 보안 기술 요소
+
+* **Firewall** : 내부망 보호 및 외부 트래픽 제어
+* **IDS/IPS** : 비정상 트래픽 탐지 및 차단
+* **VPN** : 외부 근무자를 위한 안전한 원격 업무 환경
+
+---
+
+## 📌 5. 프로젝트 팀 (Team)
+
+| 역할                | 담당자      |
+| ----------------- | -------- |
+| **PM (프로젝트 매니저)** | 차수빈      |
+| **솔루션 / 유지보수**    | 정영근, 김주영 |
+| **네트워크 설계**       | 김우혁      |
+| **ICT 컨설팅**       | 김혁중      |
+| **인턴십 지원**        | 권민재      |
+
+---
+
+## 📌 6. 결론 (Conclusion)
+
+K-ARMY는 KG 일보의 신규 사옥 환경에 최적화된 **안정적·확장성 있는 고보안 네트워크 인프라**를 제공합니다.
+3-Tier 기반 구조와 체계적인 보안 체계를 통해 KG 일보의 미래 비즈니스 확장과 서비스 품질 향상을 강력히 지원합니다.
+
+---
+
+원하시면 이 README.md 파일을 **GitHub용 표준 README 구조**, **기술 문서 스타일**, **기업 제안서 스타일** 등으로 더 개선해드릴까요?
