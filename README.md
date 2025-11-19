@@ -41,11 +41,6 @@ K-ARMY는 다음 세 가지 핵심 전략을 기반으로 네트워크 환경을
 
 3-Tier(Core–Distribution–Access) 구조를 기반으로 설계된 네트워크 구성도입니다.
 
-<div align="center">
-  <img src="K_ARMY 네트워크 구성도.gif" alt="K-ARMY 네트워크 구성도" style="max-width:100%; height:auto;" />
-  <p>▲ KG 일보 신사옥 네트워크 구성 상세 다이어그램</p>
-</div>
-
 ### 🔑 주요 설계 특징
 
 * **계층형 구조**로 트래픽 부하 분산 및 관리 효율화
