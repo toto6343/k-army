@@ -37,7 +37,7 @@ K-ARMY는 다음 세 가지 핵심 전략을 기반으로 네트워크 환경을
 ---
 
 ## 📌 3. 네트워크 구성도 (Architecture)
-
+![Image](https://github.com/user-attachments/assets/91e1965a-ee8c-4a2e-95a7-fcb068ef9fe1)
 3-Tier(Core–Distribution–Access) 구조를 기반으로 설계된 네트워크 구성도입니다.
 
 <div align="center">
